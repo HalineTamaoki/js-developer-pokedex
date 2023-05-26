@@ -20,20 +20,33 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/pokedexCard.css">
 </head>
 
 <body>
-    <section class="content">
+    <section class="content" >
         <h1>Pokedex</h1>
 
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
-        </ol>
+        <div id="section1" class="">
+            <ol id="pokemonList" class="pokemons">
+                <!-- ..... Pokemons here ..... -->
+            </ol>
+            <div class="pagination">
+                <button id="loadMoreButton" type="button">
+                    Load More
+                </button>
+            </div>    
+        </div>
 
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
+        <div id="section2" class="card hide">
+            <div>
+                <div>
+                    <button class="return-button white-text" id="return-button" aria-label="Voltar"><img src="./assets/image/back.png" alt=""></button>
+                    <div class="card-top" id="card-top"></div>
+                    <div class="pokemon-img" id="pokemon-img"></div>
+                </div>
+                <div class="card-bottom" id="card-bottom"></div>
+            </div>
         </div>
     </section>
 

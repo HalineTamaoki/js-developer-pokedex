@@ -3,7 +3,9 @@
     grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
+    border: none;
     list-style: none;
+    cursor: pointer;
 }
 
 .normal {
@@ -104,6 +106,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .pokemon .detail .types {

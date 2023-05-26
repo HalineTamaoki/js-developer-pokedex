@@ -1,0 +1,154 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-inline: .5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.return-button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.return-button img{
+  width: 1.5rem;
+}
+
+.name-and-tags{
+  display: flex;
+  flex-direction: column;
+}
+
+.name-and-tags h2{
+  text-transform: capitalize;
+  margin-block: 0;
+}
+
+.card-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.tags{
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.tags p{
+  margin-block: 0px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  backdrop-filter: opacity(60%);
+  color: white;
+}
+
+.pokemon-img{
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-img img{
+  height: 8rem;
+  max-width: 100%;
+}
+
+.white-text{
+  color: white;
+}
+
+.card-bottom{
+  padding-top: 3rem;
+  margin-top: -2rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.card-bottom-buttons{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-inline: 0.5rem;
+}
+
+.card-bottom-buttons button{
+  background-color: transparent;
+  border: none;
+  color: gray;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.card-bottom-buttons-selected{
+  color: black !important;
+  border-bottom: 1px solid blue !important;
+}
+
+.about, .stats{
+  border-spacing: 1rem;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.td-1{
+  color: gray;
+  padding-right: 1.5rem;
+}
+
+.reference-bar{
+  width: 100%;
+}
+
+.reference-bar-div{
+  background-color: #ededed;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.red-bar, .green-bar{
+  width: 45%;
+  height: 0.5rem;
+  border-radius: 1rem;
+  position: relative;
+  max-width: 100%;
+}
+
+.red-bar{
+  background-color: #cf6060;
+}
+
+.green-bar{
+  background-color: #68a168;
+}
+
+@media screen and (min-width: 576px) {  
+  .pokemon-img img{
+    height: 12rem;
+  }
+
+  table{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .td-1{
+    padding-right: 5rem;
+  }
+
+  .reference-bar{
+    width: 6rem;
+  }
+}
